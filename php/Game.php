@@ -37,7 +37,7 @@ class Game
     }
 
     function add($playerName) {
-        $playerIndex = array_push($this->players, $playerName) - 1;
+        $playerIndex = array_push($this->players, $playerName);
         $this->places[$playerIndex] = 0;
         $this->purses[$playerIndex] = 0;
         $this->inPenaltyBox[$playerIndex] = false;
